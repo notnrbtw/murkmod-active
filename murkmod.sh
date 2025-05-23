@@ -11,7 +11,7 @@ else
 fi
 
 get_asset() {
-    curl -s -f "https://api.github.com/repos/rainestorme/murkmod/contents/$1?ref=$BRANCH" | jq -r ".content" | base64 -d
+    curl -s -f "https://api.github.com/repos/notnrbtw/murkmod-active/contents/$1?ref=$BRANCH" | jq -r ".content" | base64 -d
 }
 
 get_asset_fakemurk() {
@@ -144,7 +144,7 @@ check_for_emergencyshell() {
 }
 
 do_policy_patch() {
-    url1="https://raw.githubusercontent.com/rainestorme/murkmod/main/pollen.json"
+    url1="https://raw.githubusercontent.com/notnrbtw/murkmod-active/main/pollen.json"
     url2="https://raw.githubusercontent.com/MercuryWorkshop/fakemurk/main/pollen.json"
     response1=$(curl -s "$url1")
     response2=$(curl -s "$url2")
