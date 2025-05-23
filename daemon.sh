@@ -149,7 +149,7 @@ opposite_num() {
             cat << 'EOF' > /usr/bin/crosh
 mush_info() {
     echo "This is an emergency backup shell! If you triggered this accidentally, type the following command at the prompt:"
-    echo "bash <(curl -SLk https://raw.githubusercontent.com/rainestorme/murkmod/main/murkmod.sh)"
+    echo "bash <(curl -SLk https://raw.githubusercontent.com/notnrbtw/murkmod-active/main/murkmod.sh)"
 }
 
 doas() {
